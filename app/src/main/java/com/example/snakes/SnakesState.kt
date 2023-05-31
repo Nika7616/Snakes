@@ -1,4 +1,11 @@
 package com.example.snakes
 
-class SnakesState {
+sealed class SnakesState {
+    object beforeStart: SnakesState()
+
+    object start: SnakesState()
+
+    object pause: SnakesState()
+
+    object gameOver: SnakesState()
 }
